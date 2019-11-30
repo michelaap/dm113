@@ -13,8 +13,13 @@ namespace ProductsClient
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Press ENTER when the service has started");
+            Console.ReadLine();
+
             // Create a proxy object and connect to the service
-            ProductsServiceClient proxy = new ProductsServiceClient();
+            
+            //ProductsServiceClient proxy = new ProductsServiceClient("NetTcpBinding_IProductsService");
+            ProductsServiceClient proxy = new ProductsServiceClient("BasicHttpBinding_IProductsService");
 
             // Test the operations in the service
             // Obtain a list of all products
