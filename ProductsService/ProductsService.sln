@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsEntityModel", "Prod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsService", "ProductsService\ProductsService.csproj", "{0B511074-CA27-4112-9068-C98222ED561C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsClient", "ProductsClient\ProductsClient.csproj", "{239C34D6-B6A3-44D8-8B9D-1412A20B3EAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B511074-CA27-4112-9068-C98222ED561C} = {0B511074-CA27-4112-9068-C98222ED561C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +26,10 @@ Global
 		{0B511074-CA27-4112-9068-C98222ED561C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B511074-CA27-4112-9068-C98222ED561C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B511074-CA27-4112-9068-C98222ED561C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239C34D6-B6A3-44D8-8B9D-1412A20B3EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239C34D6-B6A3-44D8-8B9D-1412A20B3EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239C34D6-B6A3-44D8-8B9D-1412A20B3EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239C34D6-B6A3-44D8-8B9D-1412A20B3EAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
